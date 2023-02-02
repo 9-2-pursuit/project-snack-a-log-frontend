@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+#navbar {
+    margin: 40px;
+}
+
+.header {
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.new-button {
+    border-radius: 30px;
+}
+
+.show-buttons {
+  flex-direction: row-reverse;
+  padding-right: 570px;
+  column-gap: 20px;
+}
+
+.index{
+    text-align: center;
+    background-color: dimgray;
+}
+
+.Snacks{
+    grid-area: 1 / 3 / 5 / 6;
+    height: calc(100vh - 161px);
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.info{
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.snack-card{
+border-style: solid;
+border-color: black;
+border: solid;
+}
+
+
+
