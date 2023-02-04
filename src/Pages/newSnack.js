@@ -1,10 +1,15 @@
 import SnackForm from "../Components/snackForm";
 import srv from '../fetch_';
+import { useNavigate } from "react-router-dom";
+
 export default function NewSnack(){
-  const default_value = {name:"",fiber:0,protein:0,added_sugar:0,image:""};
+  const default_value = { name: "", fiber: 0, protein: 0, added_sugar: 0, image: "" };
+  const navigate = useNavigate();
+  
   function on_save_snack(snack){
     srv.createSnack(snack,(data)=>{
-      console.log(data);
+      // console.log(data);
+      navigate("/");
     })
   }
   return <div>
